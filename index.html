@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pochacco's London Adventure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🐶 Pochacco's London Adventure</h1>
+    <img src="pochacco1.png" alt="Pochacco Image" class="main-img" />
+    <p>Plan your day in London with Pochacco! Choose one activity for each part of the day:</p>
+
+    <form class="dropdowns" onsubmit="return handleSubmit(event)">
+      <label>☀️ Morning:
+        <select name="morning">
+          <option>Visit Tower Bridge</option>
+          <option>Stroll in Hyde Park</option>
+          <option>Explore Borough Market</option>
+        </select>
+      </label>
+
+      <label>🍴 Lunch:
+        <select name="lunch to follow by dessert!">
+          <option>Lunch in Central London</option>
+          <option>Picnic at St. James's Park</option>
+          <option>Dim sum in Chinatown</option>
+        </select>
+      </label>
+
+      <label>🎨 Afternoon:
+        <select name="afternoon">
+          <option>Tour the British Museum</option>
+          <option>Ride the London Eye</option>
+          <option>Shopping in Covent Garden</option>
+        </select>
+      </label>
+
+      <label>🌆 Evening:
+        <select name="evening">
+          <option>Camden Town tour</option>
+          <option>Sunset from The Shard</option>
+          <option>River Thames cruise</option>
+        </select>
+      </label>
+
+      <label>🌙 Night:
+        <select name="night">
+          <option>Stargazing at Hampstead Heath</option>
+          <option>Late dessert at Soho</option>
+          <option>Cosy movie night in Hotel</option>
+        </select>
+      </label>
+
+      <button type="submit" class="submit-btn">Submit Plan</button>
+    </form>
+
+    <img src="pochacco2.png" alt="Pochacco Image 2" class="bottom-img" />
+  </div>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert("We are excited! Our London plan is ready!");
+      return false;
+    }
+  </script>
+</body>
+</html>

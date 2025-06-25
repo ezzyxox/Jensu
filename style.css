@@ -1,0 +1,36 @@
+
+body {
+  background-color: #fff0f5;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #e75480;
+}
+
+img.main-img, img.bottom-img {
+  width: 150px;
+  margin: 10px auto;
+}
+
+.dropdowns label {
+  display: block;
+  margin: 10px 0;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
