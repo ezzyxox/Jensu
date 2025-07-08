@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pochacco's Message</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .bubble {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      position: relative;
+      margin: 40px auto;
+      max-width: 500px;
+      font-size: 18px;
+      font-family: 'Comic Sans MS', cursive;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+
+    .bubble::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50px;
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-top-color: #fff;
+      transform: rotate(0deg);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #ff69b4;
+      border: 2px solid #ff69b4;
+      padding: 8px 16px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .back-link:hover {
+      background-color: #ff69b4;
+      color: white;
+    }
+
+    .pochacco-bubble-img {
+      width: 150px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💌 A Message for YisYis</h1>
+    <img src="pochacco1.png" alt="Pochacco Saying Hi" class="pochacco-bubble-img" />
+
+    <div class="bubble">
+      Hi YisYis! 💖  
+      I’m so happy we get to explore London together.  
+      Let’s make the cutest memories, one bubble tea and sunset at a time. ☁️🌆  
+      Love you lots! 🐾  
+    </div>
+
+    <a href="index.html" class="back-link">← Back to Plan</a>
+  </div>
+</body>
+</html>

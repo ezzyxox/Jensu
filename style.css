@@ -34,3 +34,12 @@ select {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+
+.interactive-button {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-top: 40px;
+}
+.interactive-button:hover {
+  transform: scale(1.05);
+}
