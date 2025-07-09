@@ -4,6 +4,7 @@ body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   text-align: center;
   padding: 20px;
+  cursor: url('images/pochacco-cursor.png'), auto;
 }
 
 .container {
