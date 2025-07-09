@@ -70,10 +70,20 @@
       return false;
     }
   </script>
-<audio controls autoplay loop>
+<audio id="bg-music" autoplay loop>
   <source src="music.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+
+<script>
+  // Waits for the first user interaction
+  document.addEventListener('click', () => {
+    const music = document.getElementById('bg-music');
+    if (music.paused) {
+      music.play();
+    }
+  }, { once: true });
+</script>
 
 
 </body>
