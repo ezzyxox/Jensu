@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +22,7 @@
       </label>
 
       <label>🍴 Lunch:
-        <select name="lunch to follow by dessert!">
+        <select name="lunch">
           <option>Lunch in Central London</option>
           <option>Picnic at St. James's Park</option>
           <option>Dim sum in Chinatown</option>
@@ -57,34 +56,31 @@
       <button type="submit" class="submit-btn">Submit Plan</button>
     </form>
 
-  <a href="more.html">
-  <img src="pochacco2.png" alt="Pochacco Image 2" class="bottom-img interactive-button" />
-</a>
-
+    <a href="more.html">
+      <img src="pochacco2.png" alt="Pochacco Image 2" class="bottom-img interactive-button" />
+    </a>
   </div>
 
+  <!-- Music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
   <script>
+    // Handles dropdown submit
     function handleSubmit(event) {
       event.preventDefault();
       alert("I am so excited for our London plan, my love!!");
-      return false;
     }
+
+    // Start music on first user interaction (required by most browsers)
+    document.addEventListener('click', () => {
+      const music = document.getElementById('bg-music');
+      if (music.paused) {
+        music.play();
+      }
+    }, { once: true });
   </script>
-<audio id="bg-music" autoplay loop>
-  <source src="music.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-<script>
-  // Waits for the first user interaction
-  document.addEventListener('click', () => {
-    const music = document.getElementById('bg-music');
-    if (music.paused) {
-      music.play();
-    }
-  }, { once: true });
-</script>
-
-
 </body>
 </html>
