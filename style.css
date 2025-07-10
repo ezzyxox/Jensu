@@ -1,8 +1,10 @@
 
 body {
   background-image: url('pochaccocute.png');
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  background-color: #fceeff; /* light fallback color */
   background-position: center;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   text-align: center;
