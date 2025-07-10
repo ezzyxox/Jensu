@@ -60,6 +60,29 @@
       <img src="pochacco2.png" alt="Pochacco Image 2" class="bottom-img interactive-button" />
     </a>
   </div>
+  
+<!-- Your existing content above -->
+
+<audio id="bg-music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const music = document.getElementById('bg-music');
+
+    const startMusic = () => {
+      if (music.paused) {
+        music.play().catch(e => {
+          console.warn("Playback prevented:", e);
+        });
+      }
+      document.removeEventListener('click', startMusic);
+    };
+
+    document.addEventListener('click', startMusic);
+  });
 
   </script>
 </body>
