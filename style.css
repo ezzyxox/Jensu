@@ -1,6 +1,9 @@
 
 body {
-  background-color: #702963;
+  background-image: url('background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   text-align: center;
   padding: 20px;
