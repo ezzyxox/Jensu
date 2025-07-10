@@ -24,7 +24,7 @@
       <label>🍴 Lunch:
         <select name="lunch">
           <option>Lunch in Central London</option>
-          <option>Picnic at St. James's Park</option>
+          <option>Italian restaurant</option>
           <option>Dim sum in Chinatown</option>
         </select>
       </label>
@@ -61,26 +61,6 @@
     </a>
   </div>
 
-  <!-- Music -->
-  <audio id="bg-music" autoplay loop>
-    <source src="music.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <script>
-    // Handles dropdown submit
-    function handleSubmit(event) {
-      event.preventDefault();
-      alert("I am so excited for our London plan, my love!!");
-    }
-
-    // Start music on first user interaction (required by most browsers)
-    document.addEventListener('click', () => {
-      const music = document.getElementById('bg-music');
-      if (music.paused) {
-        music.play();
-      }
-    }, { once: true });
   </script>
 </body>
 </html>
