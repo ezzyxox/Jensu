@@ -75,8 +75,8 @@ select {
   100% { transform: translateY(0); }
 }
 
-/* Position each bubble individually */
 .bubble:nth-child(1) { left: 20%; top: 80px; }
 .bubble:nth-child(2) { left: 50%; top: 120px; }
 .bubble:nth-child(3) { left: 70%; top: 60px; }
 }
+
