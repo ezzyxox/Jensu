@@ -188,3 +188,7 @@ select {
   font-family: 'Comic Sans MS', cursive;
 }
 
+body {
+  overflow-y: auto;
+  min-height: 1600px;
+}
