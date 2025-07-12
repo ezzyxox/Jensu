@@ -2,13 +2,18 @@
 body {
   background-image: url('pochaccocute.png');
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 40%;
-  background-color: #563c5c; /* light fallback color */
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: #563c5c; /* fallback */
   font-family: 'Comic Sans MS', cursive, sans-serif;
   text-align: center;
   padding: 40px;
+  cursor: url('pochacco-cursor-resized.png'), auto;
+  overflow-y: auto;
+  min-height: 1800px;
 }
+
 
 body {
   cursor: url('pochacco-cursor-resized.png'), auto;
