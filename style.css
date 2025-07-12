@@ -5,14 +5,15 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: contain;
-  background-color: #563c5c; /* fallback */
+  background-color: #563c5c;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   text-align: center;
   padding: 40px;
   cursor: url('pochacco-cursor-resized.png'), auto;
-  overflow-y: auto;
-  min-height: 1800px;
+  overflow: hidden; /* disables scroll */
+  height: 100vh; /* locks height to viewport */
 }
+
 
 
 body {
