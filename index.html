@@ -61,28 +61,6 @@
     </a>
   </div>
   
-<!-- Your existing content above -->
-
-<audio id="bg-music" loop>
-  <source src="Drowning.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const music = document.getElementById('bg-music');
-
-    const startMusic = () => {
-      if (music.paused) {
-        music.play().catch(e => {
-          console.warn("Playback prevented:", e);
-        });
-      }
-      document.removeEventListener('click', startMusic);
-    };
-
-    document.addEventListener('click', startMusic);
-  });
 <script>
   function handleSubmit(event) {
     event.preventDefault(); // Prevent form from refreshing the page
