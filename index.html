@@ -83,7 +83,34 @@
 
     document.addEventListener('click', startMusic);
   });
+<script>
+  function handleSubmit(event) {
+    event.preventDefault(); // Prevent form from refreshing the page
 
-  </script>
+    const form = event.target;
+    const morning = form.morning.value;
+    const lunch = form.lunch.value;
+    const afternoon = form.afternoon.value;
+    const evening = form.evening.value;
+    const night = form.night.value;
+
+    const message = `
+JJ and YisYis's Perfect London Date! 💖
+
+☀️ Morning: ${morning}
+🍴 Lunch: ${lunch}
+🎨 Afternoon: ${afternoon}
+🌆 Evening: ${evening}
+🌙 Night: ${night}
+
+I can't wait to do this with you! (っ˘з(˘⌣˘ )
+`;
+
+    alert(message);
+
+    return false; // Stop form submission
+  }
+</script>
+
 </body>
 </html>
