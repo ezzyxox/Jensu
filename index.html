@@ -5,6 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JJ and YisYis's date together in London</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .thank-you {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #e75480;
+      background: #fff0f6;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -60,7 +77,31 @@
       <img src="pochacco2.png" alt="Pochacco Image 2" class="bottom-img interactive-button" />
     </a>
   </div>
-  
+   <script>
+    document.getElementById('dateForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      formData.append('_captcha', 'false');
+      formData.append('_template', 'table');
+
+      fetch('https://formsubmit.co/YOUR_EMAIL_HERE', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => {
+        if (response.ok) {
+          document.getElementById('dateForm').style.display = 'none';
+          document.getElementById('thankYouMessage').style.display = 'block';
+        } else {
+          alert('Oops! Something went wrong.');
+        }
+      })
+      .catch(error => {
+        alert('Network error. Please try again later.');
+      });
+    });
+  </script>
 <script>
     function showPopup() {
       alert("Yay! Your date plan has been sent 💖\nI can't wait to do this with you! (っ˘з(˘⌣˘ )");
