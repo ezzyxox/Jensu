@@ -12,7 +12,7 @@
     <img src="pochacco1.png" alt="Pochacco Image" class="main-img" />
     <p>Plan our day in London! Choose one activity for each part of the day:</p>
 
-    <form class="dropdowns" onsubmit="return handleSubmit(event)">
+    <form class="dropdowns" action="https://formsubmit.co/jeneshg@gmail.com" method="POST" onsubmit="return showPopup()">
       <label>☀️ Morning:
         <select name="morning">
           <option>Visit Tower Bridge</option>
@@ -62,33 +62,11 @@
   </div>
   
 <script>
-  function handleSubmit(event) {
-    event.preventDefault(); // Prevent form from refreshing the page
-
-    const form = event.target;
-    const morning = form.morning.value;
-    const lunch = form.lunch.value;
-    const afternoon = form.afternoon.value;
-    const evening = form.evening.value;
-    const night = form.night.value;
-
-    const message = `
-JJ and YisYis's Perfect London Date! 💖
-
-☀️ Morning: ${morning}
-🍴 Lunch: ${lunch}
-🎨 Afternoon: ${afternoon}
-🌆 Evening: ${evening}
-🌙 Night: ${night}
-
-I can't wait to do this with you! (っ˘з(˘⌣˘ )
-`;
-
-    alert(message);
-
-    return false; // Stop form submission
-  }
-</script>
+    function showPopup() {
+      alert("Yay! Your date plan has been sent 💖\nI can't wait to do this with you! (っ˘з(˘⌣˘ )");
+      return true; // Allow form to submit to FormSubmit
+    }
+  </script>
 
 </body>
 </html>
